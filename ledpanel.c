@@ -12,7 +12,7 @@
 #define LOW 0
 #define HIGH 1
 
-#define NANOSEC_DELAY 100
+#define NANOSEC_DELAY 1000
 
 #define MINOR_NR 0 
 
