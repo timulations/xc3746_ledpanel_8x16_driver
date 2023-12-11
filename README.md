@@ -1,5 +1,6 @@
-# xc3746_ledpanel_8x16_driver
+# XC3746 Ledpanel 8x16 Linux Driver (Duinotech Compatible)
 XC3746 8x16 LED Panel GPIO Character Driver.
+https://www.jaycar.com.au/duinotech-arduino-compatible-8-x-16-led-matrix-display/p/XC3746
 
 The device driver is a very simple character driver that only supports writing 16 bytes at a time, with the 16 bytes representing the entire screen. The 'clever' stuff is done in user space. 
 
