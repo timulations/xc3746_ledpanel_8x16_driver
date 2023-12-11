@@ -26,6 +26,16 @@ cd xc3746_ledpanel_8x16_driver
 sudo make
 ```
 
+## Wire up the System
+The LED Panel uses I2C communication with the Pi.
+```
+            GND   ------------  Ground (any)
+LED Panel   VCC   ------------  5V Power         Raspberry Pi 4B
+            SDA   ------------  GPIO 2 (SDA) 
+            SCL   ------------  GPIO 3 (SCL)
+
+```
+
 ## Loading the Module
 Modify the script as to specify which GPIO pin is your SDA (`sda_gpio` param) and SCL (`scl_gpio`). The kernel module has been set with Raspberry Pi 4B defaults.
 ```
