@@ -1,5 +1,5 @@
 # XC3746 Ledpanel 8x16 Linux Driver (Duinotech Compatible)
-XC3746 8x16 LED Panel GPIO Character Driver.
+XC3746 8x16 LED Panel GPIO Character Linux Driver, designed to be run on Raspberry Pi.
 https://www.jaycar.com.au/duinotech-arduino-compatible-8-x-16-led-matrix-display/p/XC3746
 
 The device driver is a very simple character driver that only supports writing 16 bytes at a time, with the 16 bytes representing the entire screen. The 'clever' stuff is done in user space. 
@@ -27,6 +27,7 @@ sudo make
 ```
 
 ## Loading the Module
+Modify the script as to specify which GPIO pin is your SDA (`sda_gpio` param) and SCL (`scl_gpio`). The kernel module has been set with Raspberry Pi 4B defaults.
 ```
 sudo ./load_ledpanel.sh
 
