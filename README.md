@@ -3,6 +3,9 @@ XC3746 8x16 LED Panel GPIO Character Driver.
 
 The device driver is a very simple character driver that only supports writing 16 bytes at a time, with the 16 bytes representing the entire screen. The 'clever' stuff is done in user space. 
 
+![ledpanel_photo](https://github.com/timulations/xc3746_ledpanel_8x16_driver/assets/108556839/0be8a4e6-bbd3-460a-be80-19f3d0ff9546)
+
+
 ## Getting Started
 Install the Linux Kernel headers:
 
